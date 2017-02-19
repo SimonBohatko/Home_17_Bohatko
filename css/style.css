@@ -1,0 +1,129 @@
+.wrapper {
+    width: 770px;
+    margin: 40px 0 0 25px;
+}
+
+body {
+    background: url("../pic/symphony.png") center fixed whitesmoke;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+
+}
+
+span {
+    font-weight: bold;
+    color: #003333
+}
+
+.field {
+    box-shadow: inset 0 0 1px 0 lightgray;
+    border-radius: 3px;
+    font-size: 85%;
+
+}
+
+.long {
+    width: 35%;
+}
+
+.short {
+    width: 5%
+}
+
+legend {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+fieldset {
+    border: 1px solid grey;
+    background: #d6d6d6;
+    border-radius: 4px;
+}
+
+.block1,
+.block2,
+.block3 {
+    margin-bottom: 30px;
+}
+
+.block1 fieldset {
+    height: 195px;
+}
+
+.block1 li {
+    padding: 9px;
+}
+
+.block1 ul {
+    margin-left: -48px;
+    margin-top: 10px;
+}
+
+.block2 ul {
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.block2 ul:first-of-type li:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.block2 ul:first-of-type li:nth-child(1) {
+    margin-bottom: 2px;
+}
+
+.lesson {
+    margin: 10px 0 20px 0;
+    width: 20%;
+    font-size: 75%;
+}
+
+.block2 textarea {
+    border: 1px solid lightgrey;
+}
+
+.pos {
+    width: 17%;
+    font-size: 80%;
+    margin-bottom: 15px;
+}
+
+.block3 ul {
+    margin-left: -40px;
+    margin-top: 15px;
+}
+
+.block3 fieldset {
+    height: 335px;
+}
+
+.block3 {
+    margin-bottom: 10px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    margin: 5px 0 10px 2px;
+    padding: 2px 10px;
+    font-size: 95%;
+    border-radius: 5px;
+    background: white;
+    border: 2px solid #4CAF50;
+}
+
+input[type="submit"]:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+

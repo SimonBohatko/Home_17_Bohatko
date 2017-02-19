@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Урок "Формы": теги и их атрибуты.</h1>
+        <h2>Расскажите немного о себе...</h2>
+        <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+    </header>
+    <main>
+        <form action="submit.php" method="post">
+            <div class="block1">
+                <fieldset>
+                    <legend>
+                        Коротко о себе
+                    </legend>
+                    <ul>
+                        <li>
+                            <label>Имя:
+                                <input type="text" name="name" id="name-field" class="long field">
+                            </label>
+                        </li>
+                        <li>
+                            <label>Фамилия:
+                                <input type="text" name="surname" id="surname-field" class="long field">
+                            </label>
+                        </li>
+                        <li>
+                            Пол:
+                            <input type="radio" name="sex" id="male" value="Male" checked>
+                            <label for="male">Мужской</label>
+                            <input type="radio" name="sex" id="female" value="Female">
+                            <label for="female">Женский</label>
+                        </li>
+                        <li>
+                            <label for="age-field">Возраст:</label>
+                            <input type="text" name="age" id="age-field" class="short field">
+                            лет
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="block2">
+                <fieldset>
+                    <legend>
+                        Подробнее о себе
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="age2" id="young-men" value="young-men" checked>
+                            <label for="young-men">Молодой человек</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="age2" id="young-woman" value="young-woman">
+                            <label for="young-woman">Девушка</label>
+                        </li>
+                        <li>
+                            <input type="date" name="birth-date" id="b-day" class="field">
+                            <label for="b-day">Дата рождения</label>
+                        </li>
+                        <li>
+                            <input type="text" name="family" id="family-field" class="field">
+                            <label for="family-field">Семейное положение</label>
+                        </li>
+                        <li>
+                            <input type="text" name="status" id="status-field" class="field">
+                            <label for="status-field">Социальный статус</label>
+                        </li>
+                        <li>
+                            <input type="text" name="home" id="home-field" class="field">
+                            <label for="home-field">Местожительство</label>
+                        </li>
+                    </ul>
+                    <span>Что вы обычно делаете на выходных:</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="activities[]" value="sleeping" id="sleep">
+                            <label for="sleep">Сплю</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="activities[]" value="friends" id="friends">
+                            <label for="friends">Гуляю с друзьями</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="activities[]" value="fishing" id="fishing">
+                            <label for="fishing">Хожу на рыбалку</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="activities[]" value="games" id="games">
+                            <label for="games">Играю в игры</label>
+                        </li>
+                    </ul>
+                    <span>Рассказать о формах в книге, посвященной HTML:</span><br>
+                    <label for="lesson-select">
+                        <select name="forms" id="lesson-select" class="lesson">
+                            <option value="Site-frequency" selected>Site frequency:</option>
+                            <option value="2">2.</option>
+                            <option value="3">3.</option>
+                        </select>
+                    </label><br>
+                    <span>Сколько книг Вы прочитали за свою жизнь?</span>
+                    <ul>
+                        <li>
+                            <input type="radio" name="books" id="0-10" value="0-10">
+                            <label for="0-10">0-10</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="11-20" value="11-20">
+                            <label for="11-20">11-20</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="21-50" value="21-50">
+                            <label for="21-50">21-50</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="50+" value="50+">
+                            <label for="50+">50+</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>Ваши комментарии:</span>
+                        </li>
+                        <li>
+                            <label>
+                                <textarea cols="65" rows="10" name="text"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+                    <label>
+                        <select multiple name="pos[]" size="3" class="pos">
+                            <option value="First position">Первая позиция</option>
+                            <option value="Second position" selected>Вторая позиция</option>
+                            <option value="Third position">Третья позиция</option>
+                            <option value="Fourth position">Четвертая позиция</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="block3">
+                <fieldset>
+                    <legend>И в заключении</legend>
+                    <input type="text" name="for-you" placeholder=" Это поле было введено для Вас" class="long field">
+                    <ul>
+                        <li>
+                            <span>E-mail:</span>
+                        </li>
+                        <li>
+                            <input type="email" name="email" id="email-field" class="long field" autocomplete="on">
+                            <label for="email-field"></label>
+                        </li>
+                    </ul>
+                    <span>Хотите подписаться на самую модную рассылку спама?</span><br>
+                    <span class="italic">Выберите категории</span>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="spam[]" id="device" value="device">
+                            <label for="device">Оборудование</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="spam[]" id="meals" value="meals">
+                            <label for="meals">Как приготовить обеды</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="spam[]" id="million" value="million">
+                            <label for="million">Заработай миллион за два дня!</label>
+                        </li>
+                    </ul>
+                    <span>Насколько сложная задача:</span>
+                    <ul>
+                        <li>
+                            <input type="radio" name="complexity" id="No" value="No" checked>
+                            <label for="No">Совсем нет</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="complexity" id="So-so" value="So-so">
+                            <label for="So-so">Так себе</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="complexity" id="Hard" value="Really hard">
+                            <label for="Hard">Еле справились</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <input type="submit" name="send" id="send-but" value="Отправить">
+            <label for="send-but"></label>
+        </form>
+        <a href="list.php">Посмотреть заполнения других юзеров</a>
+    </main>
+</div>
+</body>
+</html>
