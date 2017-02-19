@@ -18,7 +18,7 @@
         <th>Birthday</th>
         <th>Family status</th>
         <th>Social status</th>
-        <th>Address</th>
+        <th>Residence</th>
         <th>Activities</th>
         <th>Frequency</th>
         <th>Books</th>
