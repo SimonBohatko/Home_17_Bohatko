@@ -18,7 +18,7 @@
         <th>Birthday</th>
         <th>Family status</th>
         <th>Social status</th>
-        <th>Residence</th>
+        <th>Address</th>
         <th>Activities</th>
         <th>Frequency</th>
         <th>Books</th>
@@ -47,7 +47,7 @@
                 <td><?= $row['Birthday'] ?></td>
                 <td><?= $row['FamilyStatus'] ?></td>
                 <td><?= $row['SocialStatus'] ?></td>
-                <td><?= $row['Residence'] ?></td>
+                <td><?= $row['Address'] ?></td>
                 <td><?= $row['Activities'] ?></td>
                 <td><?= $row['Frequency'] ?></td>
                 <td><?= $row['Books'] ?></td>
